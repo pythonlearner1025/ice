@@ -1,12 +1,12 @@
 
 // url to images in database
-export type Message = {
+export type Msg = {
     type: 'user' | 'model'
     text: string
     images: Array<string>
 }
 
 export interface ChatState {
-    messages: Array<Message>
+    messages: Array<Msg>
     status: 'idle' | 'loading' | 'error'
 }
